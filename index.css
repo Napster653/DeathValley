@@ -69,3 +69,11 @@ table tr td table tr td {
     border: 1px solid #00000000;
     background-color: #0000002f;
 }
+
+table tr td table tr td .rol {
+    max-height: 25px;
+    max-width: 25px;
+    filter: brightness(0) invert(1);
+    display: block;
+    float: right;
+}

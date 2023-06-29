@@ -28,20 +28,20 @@ function highlightThis(e)
     }
     else if (target.innerHTML.includes("PRC117-") || target.innerHTML.includes("PRC152-"))
     {
-        malla = target.innerHTML.replace("PRC152-", "PRC117-");
+        malla = target.textContent.replace("PRC152-", "PRC117-");
         for (let i = 0; i < allTds.length; i++)
         {
-            if (allTds[i].innerHTML == malla && !allTds[i].matches(".disabled tr td"))
+            if (allTds[i].textContent.includes(malla) && !allTds[i].matches(".disabled tr td"))
             {
                 allTds[i].style.backgroundColor = "#5252a144";
                 allTds[i].parentElement.parentElement.parentElement.parentElement.style.backgroundColor = "#5252a144";
             }
         }
 
-        malla = target.innerHTML.replace("PRC117-", "PRC152-");
+        malla = target.textContent.replace("PRC117-", "PRC152-");
         for (let i = 0; i < allTds.length; i++)
         {
-            if (allTds[i].innerHTML == malla && !allTds[i].matches(".disabled tr td"))
+            if (allTds[i].textContent.includes(malla) && !allTds[i].matches(".disabled tr td"))
             {
                 allTds[i].style.backgroundColor = "#5252a144";
                 allTds[i].parentElement.parentElement.parentElement.parentElement.style.backgroundColor = "#5252a144";
